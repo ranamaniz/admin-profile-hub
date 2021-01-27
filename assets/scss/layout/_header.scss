@@ -1,0 +1,16 @@
+.header {
+  &__search {
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+    }
+  }
+  &__dropdown {
+    border-radius: 30px;
+    &__user-image {
+      height: 27px;
+      width: 27px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+}

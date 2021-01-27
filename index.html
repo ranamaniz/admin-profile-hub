@@ -16,12 +16,12 @@
     <section>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3 sidebar-main__wrapper">
-                    <div class="sidebar-main">
-                        
+                <div class="col-md-3 sidebar-main__wrapper d-flex justify-content-between flex-column">
+                    <div class="sidebar-main ">
+
                         <div class="sidebar-main__logo__wrapper">
                             <a href="" class="sidebar-main__logo">HUB</a>
-                        </div>                    
+                        </div>
                         <div class="sidebar-main__menu-item">
                             <a href="#"><i class="ri-dashboard-line"></i><span>Dashboard</span></a>
                         </div>
@@ -50,17 +50,17 @@
                             <a href="#"><i class="ri-window-2-line"></i><span>Content Management System</span></a>
                         </div>
 
-                        <div class="px-2 mt-5 sidebar-main__menu-item">
+                        <div class="sidebar-main__menu-item  sidebar-main__help-item">
                             <a href="#"><i class="ri-question-line"></i>Need Help?</a>
                         </div>
-                    </div>
+                    </div>                    
 
                 </div>
-                <div class="col-md-9 p-4">
+                <div class="col-md-9 px-4 pt-2">
                     <div class="row">
                         <div class="col-12">
-                            <div class="d-flex justify-content-between align-items-center flex-md-column">
-                                <div class="search">
+                            <div class="d-flex justify-content-between align-items-center flex-column flex-sm-row">
+                                <div class="header__search">
                                     <form class="form-inline my-2 my-lg-0">
                                         <input class="form-control mr-sm-2" type="search" placeholder="Search"
                                             aria-label="Search">
@@ -73,16 +73,18 @@
                                         <!-- TODO: notification with alert needed -->
                                     </span>
                                     <div class="pl-2">
-                                        <button type="button" href="" class="btn btn-light dropdown-toggle"
+                                        <button type="button" href=""
+                                            class="btn btn-light dropdown-toggle header__dropdown"
                                             data-toggle="dropdown">
+                                            <img src="/assets/img/gates.jpg" alt="user-image"
+                                                class="header__dropdown__user-image">
                                             Charles Gray
                                         </button>
                                         <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <a class="dropdown-item" href="#">charles.gray@gmail.com</a>
+                                            <a class="dropdown-item" href="#">Profile settings</a>
                                             <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Separated link</a>
+                                            <a class="dropdown-item" href="#">Log Out</a>
                                         </div>
                                     </div>
 
@@ -92,7 +94,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 d-flex justify-content-center justify-content-md-start">
                             <section class="breadcrumb">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
@@ -116,8 +118,8 @@
                                         <div class="card-customer__icon">
                                             JM
                                         </div>
-                                        <div class="card-customer__info-wrapper">
-                                            <span class="card-customer__id">
+                                        <div class="card-customer__info__wrapper">
+                                            <span class="card-customer__info__id">
                                                 ID:58012
                                             </span>
 
@@ -128,15 +130,18 @@
 
                                     </div>
                                     <div class="card-customer__profile-details">
-                                        <div class="car-customer__email">
-                                            <span>Email:</span><span>Jim@carpentryltd.com</span><i
+                                        <div class="car-customer__email d-flex align-items-center">
+                                            <span>Email:</span><span
+                                                class="font-weight-bold p-1">Jim@carpentryltd.com</span><i
                                                 class="ri-mail-line"></i>
                                         </div>
-                                        <div class="car-customer__phone">
-                                            <span>Phone:</span><span>(584)540-8055</span><i class="ri-phone-line"></i>
+                                        <div class="car-customer__phone d-flex align-items-center">
+                                            <span>Phone:</span><span class="font-weight-bold p-1">(584)540-8055</span><i
+                                                class="ri-phone-line"></i>
                                         </div>
-                                        <div class="car-customer__insured-name">
-                                            <span>Insured Name:</span><span>Carpentry Limited</span>
+                                        <div class="car-customer__insured-name d-flex align-items-center">
+                                            <span>Insured Name:</span><span class="font-weight-bold p-1">Carpentry
+                                                Limited</span>
                                         </div>
                                     </div>
                                 </div>
@@ -148,7 +153,8 @@
                     <!--customer profile start  -->
 
 
-                    <div class="row position-relative py-5 customer-details__row d-flex justify-content-center justify-content-md-start">
+                    <div
+                        class="row position-relative py-5 customer-details__row d-flex justify-content-center justify-content-md-start">
                         <div class="col-12 col-sm-8 col-md-8 col-lg-6">
                             <div class="customer-details ">
                                 <h1>Customer Details</h1>
@@ -185,7 +191,8 @@
                             <img src="/assets/img/sitting.png" alt="sittinglady" class="profile-bg__image" />
                         </div>
                     </div>
-                    <div class="row position-relative py-5 customer-details__row justify-content-center justify-content-md-start">
+                    <div
+                        class="row position-relative py-5 customer-details__row justify-content-center justify-content-md-start">
                         <div class="col-12 col-sm-8 col-md-6">
                             <div class="customer-details ">
                                 <h1>Business/Company</h1>

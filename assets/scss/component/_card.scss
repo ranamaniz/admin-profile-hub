@@ -40,12 +40,19 @@
       border-bottom: 1px solid #d1d3d4;
     }
   }
-  &__info-wrapper {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
+  &__info {
+    &__wrapper {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+    &__id {
+      font-size: $font-size-xs;
+    }
   }
+
   &__profile-details {
+    font-size: $font-size-sm;
     @include displayFlexCenterColumn();
     padding: 0px 15px;
     @include media-breakpoint-down(xs) {
