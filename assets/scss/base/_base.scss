@@ -7,10 +7,9 @@ i{
 }
 
 a{
-    color: $color-light;    
+    color: rgba(0, 0, 0, 0.74);    
     &:hover{
-        text-decoration: none;
-        // color: $color-dark-light;
+        text-decoration: none;        
         color: $color-accent;
     }
 }

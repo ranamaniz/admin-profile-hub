@@ -14,38 +14,48 @@
     flex-direction: column;
   }
 
-  // TODO: customize bootstrap border-radius default
-
   &__icon {
     height: 65px;
     width: 65px;
     background-color: #79d1f2;
     color: #fff;
     border-radius: $border-radius;
-    // TODO: customize bootstrap border-radius default
+    font-size: 27px;
+    padding-top: 10px;    
     @include displayFlexAlignCenter();
   }
   &__profile-main {
     @include displayFlexAlignCenter();
-    // &::after {
-    //   content: "";
-    //   display: block;
-    //   width: 1px;
-    //   background-color: #d1d3d4;
-    // }
 
-    border-right: 1px solid #d1d3d4;
+
+    // border-right: 1px solid #d1d3d4;
     @include media-breakpoint-down(xs) {
-      border-right: 0;
+      // border-right: 0;
       border-bottom: 1px solid #d1d3d4;
     }
   }
-  &__info-wrapper {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
+  &__info {
+    &__wrapper {
+      padding: 0px 16px;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid #d1d3d4;
+      @include media-breakpoint-down(xs) {
+        border-right: 0px;        
+        padding:16px
+      }
+    }
+    &__id {
+      font-size: $font-size-xs;
+    }
+    &__name{
+      font-size: $font-size-xl;
+      font-weight: 600;
+    }
   }
+
   &__profile-details {
+    font-size: $font-size-sm;
     @include displayFlexCenterColumn();
     padding: 0px 15px;
     @include media-breakpoint-down(xs) {

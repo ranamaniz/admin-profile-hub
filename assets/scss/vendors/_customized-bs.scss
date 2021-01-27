@@ -1,0 +1,23 @@
+$theme-colors: (
+  "primary":#b066cc,
+  "light": #f9f9fe,
+);
+
+.breadcrumb {
+  background-color: #fff;
+  padding: 0px;
+  margin-top: 18px;
+  margin-bottom: 24px;
+  font-size: $font-size-xs;
+}
+
+.btn-light.dropdown-toggle {
+  color: rgba(38, 37, 38, 0.74);
+}
+
+.dropdown-menu {
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 4px 5px;
+  .dropdown-item {
+    text-align: right;
+  }
+}

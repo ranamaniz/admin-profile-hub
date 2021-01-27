@@ -1,0 +1,31 @@
+.info-section {
+  margin-bottom: 68px;
+  margin-top: 48px;
+  &__divider {
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+
+      border-bottom: 1px solid $bg-light-shade;
+    }
+  }
+
+  &__title {
+    margin-bottom: 28px;
+    font-size: $font-size-md;
+    font-weight: 600;
+  }
+  &__data {
+    font-size: $font-size-xs;
+    div {
+      margin-bottom: 14px;
+    }
+    &-title {
+      font-weight: 400;
+    }
+    &-value {
+      font-weight: 600;
+    }
+  }
+}
