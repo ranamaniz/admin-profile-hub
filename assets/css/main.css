@@ -9928,6 +9928,10 @@ h3 {
     border-color: #dee2e6;
   }
 }
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 i {
   color: rgba(79, 93, 115, 0.78);
 }
@@ -9937,10 +9941,12 @@ a {
 }
 a:hover {
   text-decoration: none;
+  color: #B066CC;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
+.breadcrumb {
+  background-color: #fff;
+  padding-left: 0px;
 }
 
 .card-customer {
@@ -9950,7 +9956,13 @@ body {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
+  .card-customer {
+    width: 100%;
+    align-items: center;
+  }
+}
+@media (max-width: 575.98px) {
   .card-customer {
     flex-direction: column;
   }
@@ -9969,7 +9981,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid #D1D3D4;
+  border-right: 1px solid #d1d3d4;
+}
+@media (max-width: 575.98px) {
+  .card-customer__profile-main {
+    border-right: 0;
+    border-bottom: 1px solid #d1d3d4;
+  }
 }
 .card-customer__info-wrapper {
   padding: 16px;
@@ -9982,6 +10000,11 @@ body {
   flex-direction: column;
   padding: 0px 15px;
 }
+@media (max-width: 575.98px) {
+  .card-customer__profile-details {
+    padding: 15px 15px;
+  }
+}
 
 .profile-bg {
   position: absolute;
@@ -9992,12 +10015,31 @@ body {
   height: 170px;
 }
 
+.sidebar-main {
+  padding: 11px 18px;
+}
+.sidebar-main__logo {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #9E00D3;
+}
+.sidebar-main__logo__wrapper {
+  padding: 11px 18px;
+}
+.sidebar-main__logo:hover {
+  color: #9E00D3;
+}
 .sidebar-main__wrapper {
   background-color: #F9F9FE;
 }
 .sidebar-main__menu-item {
   padding: 11px 18px;
   border-radius: 0.5rem;
+  justify-content: flex-start;
+}
+.sidebar-main__menu-item a {
+  display: flex;
+  justify-content: start;
 }
 .sidebar-main__menu-item i {
   padding: 0px 5px;

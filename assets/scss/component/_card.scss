@@ -5,7 +5,12 @@
   display: flex;
   justify-content: space-between;
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+    align-items: center;
+  }
+
+  @include media-breakpoint-down(xs) {
     flex-direction: column;
   }
 
@@ -29,7 +34,11 @@
     //   background-color: #d1d3d4;
     // }
 
-    border-right: 1px solid #D1D3D4;
+    border-right: 1px solid #d1d3d4;
+    @include media-breakpoint-down(xs) {
+      border-right: 0;
+      border-bottom: 1px solid #d1d3d4;
+    }
   }
   &__info-wrapper {
     padding: 16px;
@@ -39,5 +48,8 @@
   &__profile-details {
     @include displayFlexCenterColumn();
     padding: 0px 15px;
+    @include media-breakpoint-down(xs) {
+      padding: 15px 15px;
+    }
   }
 }
