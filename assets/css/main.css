@@ -10131,8 +10131,64 @@ a:hover {
   border-radius: 50%;
 }
 
+.lock-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.side-menu-button {
+  position: fixed;
+  top: 10%;
+  z-index: 100;
+  left: 0px;
+}
+.side-menu-button i {
+  font-size: 30px;
+}
+
 .sidebar-main {
   padding: 31px 24px;
+  position: sticky;
+  top: 0;
+}
+.sidebar-main__close-btn {
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  right: 12px;
+  cursor: pointer;
+  z-index: 300;
+}
+.sidebar-main__wrapper.collapse {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 575.98px) {
+  .sidebar-main__wrapper {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    max-height: 100%;
+    width: 0%;
+  }
+  .sidebar-main__wrapper.collapse {
+    display: none;
+  }
+}
+.sidebar-main__wrapper.collapse.show {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: width 1s ease-in-out;
+  overflow-y: scroll;
+}
+.sidebar-main__wrapper.collapse.show::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 575.98px) {
+  .sidebar-main__wrapper.collapse.show .profile-body {
+    display: none;
+  }
 }
 .sidebar-main__logo {
   font-size: 3rem;
@@ -10164,7 +10220,8 @@ a:hover {
   background-color: #fff;
   color: #B066CC;
 }
-.sidebar-main__menu-item:hover i, .sidebar-main__menu-item:hover a {
+.sidebar-main__menu-item:hover i,
+.sidebar-main__menu-item:hover a {
   color: #B066CC;
 }
 .sidebar-main__help-item {
