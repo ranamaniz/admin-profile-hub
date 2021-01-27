@@ -1,42 +1,102 @@
-.sidebar-main{
-    padding: 31px 24px;
-    &__logo{
-        &__wrapper{
-            padding: 11px 18px;
-        }        
-        font-size: $font-size-xxl;
-        font-weight: 800;
-        color: $color-accent-dark;
-        &:hover{
-            color: $color-accent-dark;
-        }
+.lock-scroll{
+  overflow: hidden;
+  height: 100vh;
+}
 
+.side-menu-button {
+  position: fixed;
+  top: 10%;
+  z-index: 100;
+  left: 0px;
+  i {
+    font-size: 30px;
+  }
+}
+
+.sidebar-main {
+  padding: 31px 24px;
+  position: sticky;
+  top: 0;
+
+  &__close-btn{
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 12px;
+    cursor: pointer;
+    z-index: 300;
+  }
+
+  &__wrapper {
+    &.collapse {
+      display: flex;
+      flex-direction: column;
     }
-    &__wrapper{
-        background-color: $bg-light;
-    }
-    &__menu-item{
-        padding: 11px 18px;
-        border-radius: $border-radius;
-        a{
-            display: flex;
-            justify-content: start;
-        }
-        justify-content: flex-start;
-        i{
-            padding-right: 15px;            
-        }
-        &:hover{
-            background-color: $bg-lighter;
-            color: $color-accent;
-            i,a {
-                color: $color-accent;
-            }
-            
-        }
+    @include media-breakpoint-down(xs) {
+      display: none;
+      position: fixed;
+      z-index: 200;
+      max-height: 100%;
+      width: 0%;
+      &.collapse {
+        display: none;
+        // visibility: hidden;
+      }
     }
 
-    &__help-item{
-        margin: 170px 0px 50px 0px ;
+    &.collapse.show {
+      display: block;
+      width: 100%;
+      height: 100%;
+      transition: width 1s ease-in-out;
+      // visibility: visible;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      @include media-breakpoint-down(xs) {
+        .profile-body {
+          display: none;
+        }
+      }
     }
+  }
+  &__logo {
+    &__wrapper {
+      padding: 11px 18px;
+    }
+    font-size: $font-size-xxl;
+    font-weight: 800;
+    color: $color-accent-dark;
+    &:hover {
+      color: $color-accent-dark;
+    }
+  }
+  &__wrapper {
+    background-color: $bg-light;
+  }
+  &__menu-item {
+    padding: 11px 18px;
+    border-radius: $border-radius;
+    a {
+      display: flex;
+      justify-content: start;
+    }
+    justify-content: flex-start;
+    i {
+      padding-right: 15px;
+    }
+    &:hover {
+      background-color: $bg-lighter;
+      color: $color-accent;
+      i,
+      a {
+        color: $color-accent;
+      }
+    }
+  }
+
+  &__help-item {
+    margin: 170px 0px 50px 0px;
+  }
 }

@@ -12,13 +12,16 @@
 </head>
 
 <body>
-
     <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3 sidebar-main__wrapper d-flex justify-content-between flex-column">
-                    <div class="sidebar-main ">
 
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-3 sidebar-main__wrapper collapse" id="sideMenuCollapse">
+                    <div class="sidebar-main__close-btn" onclick="closeSidebar(); lockScroll();">
+                        <i class="ri-close-fill" ></i>
+                    </div>
+                    <div class="sidebar-main">
                         <div class="sidebar-main__logo__wrapper">
                             <a href="" class="sidebar-main__logo">HUB</a>
                         </div>
@@ -56,7 +59,13 @@
                     </div>
 
                 </div>
-                <div class="col-md-9 profile-body pt-3">
+                <div class="col-md-9 profile-body pt-3" id="main-body">
+                    <div class="d-sm-none side-menu-button">
+                        <a data-toggle="collapse" href="#sideMenuCollapse" role="button" aria-expanded="false"
+                            aria-controls="sideMenuCollapse" onclick="lockScroll()">
+                            <i class="ri-menu-line"></i>
+                        </a>
+                    </div>
                     <div class="row">
                         <div class="col-12">
                             <div
@@ -73,7 +82,7 @@
                                         <i class="ri-mail-line "></i>
                                     </a>
                                     <a class="px-2 d-flex">
-                                        <i class="ri-notification-line "></i>                                        
+                                        <i class="ri-notification-line "></i>
                                     </a>
                                     <div class="pl-2">
                                         <button type="button" href=""
@@ -103,7 +112,7 @@
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                                         <li class="breadcrumb-item"><a href="#">Customer</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Customer</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Jim Smith</a></li>
                                         <li class="breadcrumb-item active" aria-current="page">Fleet Risk</li>
                                     </ol>
                                 </nav>
@@ -230,8 +239,6 @@
                         </div>
                     </div>
 
-
-
                 </div>
             </div>
         </div>
@@ -244,6 +251,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
+    <script src="/assets/js/custom.js"></script>
     <!-- <script src="./node_modules/bootstrap/js/dist/popover.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
 
