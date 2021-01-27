@@ -29,10 +29,11 @@
 
   &__wrapper {
     &.collapse {
-      display: flex;
-      flex-direction: column;
+      display: block;
+      // display: flex;
+      // flex-direction: column;
     }
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       display: none;
       position: fixed;
       z-index: 200;
@@ -54,7 +55,7 @@
       &::-webkit-scrollbar {
         display: none;
       }
-      @include media-breakpoint-down(xs) {
+      @include media-breakpoint-down(sm) {
         .profile-body {
           display: none;
         }

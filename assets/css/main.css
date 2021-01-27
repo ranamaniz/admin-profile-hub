@@ -10160,10 +10160,9 @@ a:hover {
   z-index: 300;
 }
 .sidebar-main__wrapper.collapse {
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .sidebar-main__wrapper {
     display: none;
     position: fixed;
@@ -10185,7 +10184,7 @@ a:hover {
 .sidebar-main__wrapper.collapse.show::-webkit-scrollbar {
   display: none;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .sidebar-main__wrapper.collapse.show .profile-body {
     display: none;
   }
