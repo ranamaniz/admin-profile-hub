@@ -53,25 +53,28 @@
                         <div class="sidebar-main__menu-item  sidebar-main__help-item">
                             <a href="#"><i class="ri-question-line"></i>Need Help?</a>
                         </div>
-                    </div>                    
+                    </div>
 
                 </div>
-                <div class="col-md-9 px-4 pt-2">
+                <div class="col-md-9 profile-body pt-3">
                     <div class="row">
                         <div class="col-12">
-                            <div class="d-flex justify-content-between align-items-center flex-column flex-sm-row">
+                            <div
+                                class="d-flex justify-content-between align-items-end align-items-sm-center flex-column flex-sm-row">
                                 <div class="header__search">
-                                    <form class="form-inline my-2 my-lg-0">
-                                        <input class="form-control mr-sm-2" type="search" placeholder="Search"
-                                            aria-label="Search">
+                                    <form class="form-inline position-relative">
+                                        <input class="form-control mr-sm-2" type="search"
+                                            placeholder="Search By Keywords" aria-label="Search">
+                                        <i class="ri-search-line header__search__icon"></i>
                                     </form>
                                 </div>
-                                <div class="profile d-flex justify-content-end align-items-center">
-                                    <span class="px-2"><i class="ri-mail-line"></i></span>
-                                    <span class="px-2">
-                                        <i class="ri-notification-line"></i>
-                                        <!-- TODO: notification with alert needed -->
-                                    </span>
+                                <div class="header__profile d-flex justify-content-end align-items-center mt-3 mt-sm-0">
+                                    <a class="px-2 d-flex">
+                                        <i class="ri-mail-line "></i>
+                                    </a>
+                                    <a class="px-2 d-flex">
+                                        <i class="ri-notification-line "></i>                                        
+                                    </a>
                                     <div class="pl-2">
                                         <button type="button" href=""
                                             class="btn btn-light dropdown-toggle header__dropdown"
@@ -123,24 +126,24 @@
                                                 ID:58012
                                             </span>
 
-                                            <h1 class="card-customer__name">
-                                                JIM SMITH
-                                            </h1>
+                                            <span class="card-customer__info__name">
+                                                Jim Smith
+                                            </span>
                                         </div>
 
                                     </div>
                                     <div class="card-customer__profile-details">
                                         <div class="car-customer__email d-flex align-items-center">
                                             <span>Email:</span><span
-                                                class="font-weight-bold p-1">Jim@carpentryltd.com</span><i
+                                                class="font-weight-600 p-1">Jim@carpentryltd.com</span><i
                                                 class="ri-mail-line"></i>
                                         </div>
                                         <div class="car-customer__phone d-flex align-items-center">
-                                            <span>Phone:</span><span class="font-weight-bold p-1">(584)540-8055</span><i
+                                            <span>Phone:</span><span class="font-weight-600 p-1">(584)540-8055</span><i
                                                 class="ri-phone-line"></i>
                                         </div>
                                         <div class="car-customer__insured-name d-flex align-items-center">
-                                            <span>Insured Name:</span><span class="font-weight-bold p-1">Carpentry
+                                            <span>Insured Name:</span><span class="font-weight-600 p-1">Carpentry
                                                 Limited</span>
                                         </div>
                                     </div>
@@ -154,72 +157,73 @@
 
 
                     <div
-                        class="row position-relative py-5 customer-details__row d-flex justify-content-center justify-content-md-start">
+                        class="row position-relative info-section__wrapper d-flex justify-content-center justify-content-md-start">
                         <div class="col-12 col-sm-8 col-md-8 col-lg-6">
-                            <div class="customer-details ">
-                                <h1>Customer Details</h1>
-                                <div class="customer-details__data row">
+                            <div class="info-section ">
+                                <h1 class="info-section__title">Customer Details</h1>
+                                <div class="info-section__data row">
 
-                                    <div class="customer-details__data-title col-6">Insured Name</div>
-                                    <div class="customer-details__data-value col-6">Carpentry Limited</div>
-
-
-                                    <div class="customer-details__data-title col-6">Primary Contact</div>
-                                    <div class="customer-details__data-value col-6">Jim Smith</div>
+                                    <div class="info-section__data-title col-6">Insured Name</div>
+                                    <div class="info-section__data-value col-6">Carpentry Limited</div>
 
 
-                                    <div class="customer-details__data-title col-6">Address</div>
-                                    <div class="customer-details__data-value col-6">21b Baker Street, London,UKE14DD
+                                    <div class="info-section__data-title col-6">Primary Contact</div>
+                                    <div class="info-section__data-value col-6">Jim Smith</div>
+
+
+                                    <div class="info-section__data-title col-6">Address</div>
+                                    <div class="info-section__data-value col-6">21b Baker Street, London,UKE14DD
                                     </div>
 
 
-                                    <div class="customer-details__data-title col-6">Email Address</div>
-                                    <div class="customer-details__data-value col-6">jim@carpentryltd.com</div>
+                                    <div class="info-section__data-title col-6">Email Address</div>
+                                    <div class="info-section__data-value col-6">jim@carpentryltd.com</div>
 
 
-                                    <div class="customer-details__data-title col-6">Phone Number</div>
-                                    <div class="customer-details__data-value col-6">Carpentry Limited</div>
+                                    <div class="info-section__data-title col-6">Phone Number</div>
+                                    <div class="info-section__data-value col-6">Carpentry Limited</div>
 
 
-                                    <div class="customer-details__data-title col-6">Insured Name</div>
-                                    <div class="customer-details__data-value col-6">(584)540-8055</div>
+                                    <div class="info-section__data-title col-6">Insured Name</div>
+                                    <div class="info-section__data-value col-6">(584)540-8055</div>
 
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-6 d-none d-md-flex justify-content-end profile-bg ">
+                        <div class=" d-none d-md-flex justify-content-end profile-bg ">
                             <img src="/assets/img/sitting.png" alt="sittinglady" class="profile-bg__image" />
                         </div>
+                        <div class="col-12 info-section__divider"></div>
                     </div>
                     <div
-                        class="row position-relative py-5 customer-details__row justify-content-center justify-content-md-start">
-                        <div class="col-12 col-sm-8 col-md-6">
-                            <div class="customer-details ">
-                                <h1>Business/Company</h1>
-                                <div class="customer-details__data row">
+                        class="row position-relative py-5 info-section__row justify-content-center justify-content-md-start">
+                        <div class="col-12 col-sm-8 col-md-8 col-lg-6">
+                            <div class="info-section ">
+                                <h1 class="info-section__title">Business/Company</h1>
+                                <div class="info-section__data row">
 
-                                    <div class="customer-details__data-title col-6">Status of entity</div>
-                                    <div class="customer-details__data-value col-6"> Limited</div>
-
-
-                                    <div class="customer-details__data-title col-6">Name of Partner</div>
-                                    <div class="customer-details__data-value col-6">Mr Tim Smith</div>
+                                    <div class="info-section__data-title col-6">Status of entity</div>
+                                    <div class="info-section__data-value col-6"> Limited</div>
 
 
-                                    <div class="customer-details__data-title col-6">Name of subsidiary Company</div>
-                                    <div class="customer-details__data-value col-6">Something Limited</div>
+                                    <div class="info-section__data-title col-6">Name of Partner</div>
+                                    <div class="info-section__data-value col-6">Mr Tim Smith</div>
 
 
-                                    <div class="customer-details__data-title col-6">Email Address</div>
-                                    <div class="customer-details__data-value col-6">jim@carpentryltd.com</div>
+                                    <div class="info-section__data-title col-6">Name of subsidiary Company</div>
+                                    <div class="info-section__data-value col-6">Something Limited</div>
 
 
-                                    <div class="customer-details__data-title col-6">Established Year</div>
-                                    <div class="customer-details__data-value col-6">2018</div>
+                                    <div class="info-section__data-title col-6">Email Address</div>
+                                    <div class="info-section__data-value col-6">jim@carpentryltd.com</div>
 
 
-                                    <div class="customer-details__data-title col-6">Employee PAYE No</div>
-                                    <div class="customer-details__data-value col-6">(584)540-8055</div>
+                                    <div class="info-section__data-title col-6">Established Year</div>
+                                    <div class="info-section__data-value col-6">2018</div>
+
+
+                                    <div class="info-section__data-title col-6">Employee PAYE No</div>
+                                    <div class="info-section__data-value col-6">(584)540-8055</div>
 
                                 </div>
                             </div>

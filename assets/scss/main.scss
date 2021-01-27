@@ -1,20 +1,21 @@
-// bootstrap
-@import './vendors/bootstrap';
 
-// base
-@import './base/variables';
-@import './base/base';
-@import './base/mixins';
-@import './base/custom-bootstrap';
+@import "./vendors/custom-bootstrap";
+
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/base";
+@import "./base/helpers";
+
+@import'./vendors/_customized-bs';
+
 
 // component
-@import './component/card';
-@import './component/background';
-@import './component/sidebar-menu';
+@import "./component/card";
+@import "./component/background";
+@import "./component/info-box";
+@import "./component/icon-custom";
 
 // layout
-@import './layout/profile';
-@import './layout/header';
-
-
-
+@import "./layout/profile";
+@import "./layout/header";
+@import "./layout/sidebar-menu";

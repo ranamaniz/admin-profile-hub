@@ -1,5 +1,25 @@
 .header {
+  &__profile{
+    i{
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
   &__search {
+    width: 275px;
+    height: 36px;    
+    &__icon{
+      position: absolute;
+      left: 11px;
+    }
+    .form-control{
+      padding-left: 33px;
+      border: none;
+      &:focus{
+        // border-color: $bg-light;
+        box-shadow: 0 0 0 0.2rem $bg-light;
+      }
+    }
     @include media-breakpoint-down(xs) {
       width: 100%;
     }

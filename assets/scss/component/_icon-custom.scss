@@ -1,0 +1,15 @@
+.ri-notification-line{
+    position: relative;
+    &::after{
+        content:"";
+        display: block;
+        height: 9px;
+        width: 9px;
+        border-radius: 50%;
+        background-color:  #FE7F90;
+        position: absolute;
+        top: 4px;
+        right: 1px;
+        border: 1.5px solid #fff;
+    }
+}

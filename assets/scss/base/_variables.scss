@@ -5,7 +5,7 @@ $border-radius:0.5rem;
 
 // font-size
 $font-size-xxl:3rem;
-$font-size-xl:2.065rem;
+$font-size-xl:2.06rem;
 $font-size-lg:1.70rem;
 $font-size-md:1.19rem;
 $font-size-sm:0.94rem;
@@ -15,7 +15,7 @@ $font-size-xs:0.88rem;
 $font-family-base:'Poppins', sans-serif;
 
 // font-color
-$color-light:rgba(0, 0, 0, 0.74);
+$color-dark:rgba(0, 0, 0, 0.74);
 $color-accent:#B066CC;
 $color-accent-dark:#9E00D3;
 $color-dark-light:rgba(38, 37, 38, 0.74);
@@ -23,6 +23,8 @@ $color-dark-light:rgba(38, 37, 38, 0.74);
 //background color
 $bg-lighter:#fff;
 $bg-light:#F9F9FE;
+$bg-light-shade:#DAE0ED;
 $bg-light-dark:#C4C4C4;
 
 $light:#F9F9FE;
+

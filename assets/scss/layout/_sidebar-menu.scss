@@ -1,5 +1,5 @@
 .sidebar-main{
-    padding: 11px 18px;
+    padding: 31px 24px;
     &__logo{
         &__wrapper{
             padding: 11px 18px;
@@ -24,7 +24,7 @@
         }
         justify-content: flex-start;
         i{
-            padding-right: 5px;            
+            padding-right: 15px;            
         }
         &:hover{
             background-color: $bg-lighter;
@@ -37,6 +37,6 @@
     }
 
     &__help-item{
-        margin: 100px 0px 50px 0px ;
+        margin: 170px 0px 50px 0px ;
     }
 }
