@@ -1,0 +1,43 @@
+.card-customer {
+  background-color: $bg-light;
+  border-radius: $border-radius;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
+
+  // TODO: customize bootstrap border-radius default
+
+  &__icon {
+    height: 65px;
+    width: 65px;
+    background-color: #79d1f2;
+    color: #fff;
+    border-radius: $border-radius;
+    // TODO: customize bootstrap border-radius default
+    @include displayFlexAlignCenter();
+  }
+  &__profile-main {
+    @include displayFlexAlignCenter();
+    // &::after {
+    //   content: "";
+    //   display: block;
+    //   width: 1px;
+    //   background-color: #d1d3d4;
+    // }
+
+    border-right: 1px solid #D1D3D4;
+  }
+  &__info-wrapper {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__profile-details {
+    @include displayFlexCenterColumn();
+    padding: 0px 15px;
+  }
+}

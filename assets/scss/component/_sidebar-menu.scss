@@ -1,0 +1,21 @@
+.sidebar-main{
+    &__wrapper{
+        background-color: $bg-light;
+    }
+    &__menu-item{
+        padding: 11px 18px;
+        border-radius: $border-radius;
+        i{
+            padding: 0px 5px;
+            
+        }
+        &:hover{
+            background-color: $bg-lighter;
+            color: $color-accent;
+            i,a {
+                color: $color-accent;
+            }
+            
+        }
+    }
+}

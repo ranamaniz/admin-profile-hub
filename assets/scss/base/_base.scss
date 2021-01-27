@@ -1,0 +1,11 @@
+i{
+    color: rgba(79, 93, 115, 0.78);
+}
+
+a{
+    color: $color-light;    
+    &:hover{
+        text-decoration: none;
+        // color: $color-accent;
+    }
+}
