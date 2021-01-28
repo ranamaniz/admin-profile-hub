@@ -10042,12 +10042,8 @@ a:hover {
 .profile-bg {
   position: absolute;
   right: 0px;
-  bottom: -20px;
+  bottom: 0px;
 }
-.profile-bg__image {
-  height: 170px;
-}
-
 .info-section {
   margin-bottom: 68px;
   margin-top: 48px;
