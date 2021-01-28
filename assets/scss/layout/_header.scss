@@ -1,21 +1,28 @@
 .header {
-  &__profile{
-    i{
+  &__profile {
+    i {
       font-size: 20px;
       cursor: pointer;
     }
   }
   &__search {
     width: 275px;
-    height: 36px;    
-    &__icon{
+    height: 36px;
+    &__icon {
       position: absolute;
       left: 11px;
     }
-    .form-control{
+    .form-control {
       padding-left: 33px;
       border: none;
-      &:focus{
+      font-size: $font-size-xs;
+      height: 36px;
+      width: 275px;
+      color: rgba(38,37,38,0.74);
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+      &:focus {
         // border-color: $bg-light;
         box-shadow: 0 0 0 0.2rem $bg-light;
       }
