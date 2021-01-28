@@ -10042,12 +10042,8 @@ a:hover {
 .profile-bg {
   position: absolute;
   right: 0px;
-  bottom: -20px;
+  bottom: 0px;
 }
-.profile-bg__image {
-  height: 170px;
-}
-
 .info-section {
   margin-bottom: 68px;
   margin-top: 48px;
@@ -10141,6 +10137,7 @@ a:hover {
   top: 10%;
   z-index: 100;
   left: 0px;
+  cursor: pointer;
 }
 .side-menu-button i {
   font-size: 30px;
@@ -10151,6 +10148,12 @@ a:hover {
   position: sticky;
   top: 0;
 }
+@media (max-width: 767.98px) {
+  .sidebar-main {
+    padding: 0px;
+    position: relative;
+  }
+}
 .sidebar-main__close-btn {
   font-size: 30px;
   position: absolute;
@@ -10159,33 +10162,45 @@ a:hover {
   cursor: pointer;
   z-index: 300;
 }
-.sidebar-main__wrapper.collapse {
-  display: block;
-}
 @media (max-width: 767.98px) {
   .sidebar-main__wrapper {
-    display: none;
+    padding: 0px;
+    transition: all 0.5s ease-in-out;
     position: fixed;
-    z-index: 200;
-    max-height: 100%;
     width: 0%;
+    visibility: hidden;
+    z-index: 200;
   }
-  .sidebar-main__wrapper.collapse {
-    display: none;
+  .sidebar-main__wrapper.collapsable .sidebar-main {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+    width: 0%;
+    height: 0%;
+    background-color: #F9F9FE;
   }
 }
-.sidebar-main__wrapper.collapse.show {
-  display: block;
+.sidebar-main__wrapper.collapsable.showSidebar {
+  opacity: 1;
   width: 100%;
   height: 100%;
-  transition: width 1s ease-in-out;
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
   overflow-y: scroll;
+  z-index: 200;
 }
-.sidebar-main__wrapper.collapse.show::-webkit-scrollbar {
+.sidebar-main__wrapper.collapsable.showSidebar .sidebar-main {
+  visibility: visible;
+  opacity: 1;
+  /* transition: all 0.1s ease-in-out; */
+  width: 100%;
+  height: 100%;
+}
+.sidebar-main__wrapper.collapsable.showSidebar::-webkit-scrollbar {
   display: none;
 }
 @media (max-width: 767.98px) {
-  .sidebar-main__wrapper.collapse.show .profile-body {
+  .sidebar-main__wrapper.collapsable.showSidebar .profile-body {
     display: none;
   }
 }

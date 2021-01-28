@@ -16,8 +16,8 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3 sidebar-main__wrapper collapse" id="sideMenuCollapse">
-                    <div class="d-sm-block d-md-none sidebar-main__close-btn" onclick="closeSidebar(); lockScroll();">
+                <div class="col-md-3 sidebar-main__wrapper collapsable" id="sideMenuCollapse">
+                    <div class="d-sm-block d-md-none sidebar-main__close-btn" onclick="closeSidebar()">
                         <i class="ri-close-fill" ></i>
                     </div>
                     <div class="sidebar-main">
@@ -60,8 +60,7 @@
                 </div>
                 <div class="col-md-9 profile-body pt-3" id="main-body">
                     <div class="d-md-none side-menu-button">
-                        <a data-toggle="collapse" href="#sideMenuCollapse" role="button" aria-expanded="false"
-                            aria-controls="sideMenuCollapse" onclick="lockScroll()">
+                        <a  onclick="openSidebar()">
                             <i class="ri-menu-line"></i>
                         </a>
                     </div>
@@ -199,7 +198,7 @@
                             </div>
                         </div>
                         <div class=" d-none d-md-flex justify-content-end profile-bg ">
-                            <img src="/assets/img/sitting.png" alt="sittinglady" class="profile-bg__image" />
+                            <img src="/assets/img/sitting-4.png" alt="sittinglady" class="profile-bg__image" />
                         </div>
                         <div class="col-12 info-section__divider"></div>
                     </div>

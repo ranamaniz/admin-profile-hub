@@ -1,4 +1,4 @@
-.lock-scroll{
+.lock-scroll {
   overflow: hidden;
   height: 100vh;
 }
@@ -8,6 +8,7 @@
   top: 10%;
   z-index: 100;
   left: 0px;
+  cursor: pointer;
   i {
     font-size: 30px;
   }
@@ -18,7 +19,12 @@
   position: sticky;
   top: 0;
 
-  &__close-btn{
+  @include media-breakpoint-down(sm) {
+    padding: 0px;
+    position: relative;
+  }
+
+  &__close-btn {
     font-size: 30px;
     position: absolute;
     top: 0;
@@ -28,30 +34,46 @@
   }
 
   &__wrapper {
-    &.collapse {
-      display: block;
-      // display: flex;
-      // flex-direction: column;
+    &.collapsable {
     }
     @include media-breakpoint-down(sm) {
-      display: none;
+      padding: 0px;
+      transition: all 0.5s ease-in-out;
+
       position: fixed;
-      z-index: 200;
-      max-height: 100%;
+
       width: 0%;
-      &.collapse {
-        display: none;
-        // visibility: hidden;
+
+      visibility: hidden;
+      &.collapsable {
+        .sidebar-main {
+          visibility: hidden;
+          opacity: 0;
+          transition: all 0.5s linear;
+          width: 0%;
+          height: 0%;
+          background-color: $bg-light;
+        }
       }
+      z-index: 200;
     }
 
-    &.collapse.show {
-      display: block;
+    &.collapsable.showSidebar {
+      opacity: 1;
+
       width: 100%;
       height: 100%;
-      transition: width 1s ease-in-out;
-      // visibility: visible;
+      visibility: visible;
+      transition: all 0.5s ease-in-out;
       overflow-y: scroll;
+      z-index: 200;
+      .sidebar-main {
+        visibility: visible;
+        opacity: 1;
+        /* transition: all 0.1s ease-in-out; */
+        width: 100%;
+        height: 100%;
+      }
       &::-webkit-scrollbar {
         display: none;
       }
