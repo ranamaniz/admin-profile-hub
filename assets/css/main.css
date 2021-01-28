@@ -10026,6 +10026,11 @@ a:hover {
   font-size: 2.06rem;
   font-weight: 600;
 }
+@media (max-width: 575.98px) {
+  .card-customer__info__name {
+    font-size: 1.4rem;
+  }
+}
 .card-customer__profile-details {
   font-size: 0.94rem;
   display: flex;
@@ -10047,6 +10052,7 @@ a:hover {
 .info-section {
   margin-bottom: 68px;
   margin-top: 48px;
+  overflow-wrap: break-word;
 }
 .info-section__divider::after {
   content: "";
@@ -10092,6 +10098,12 @@ a:hover {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+@media (max-width: 767.98px) {
+  .profile-body {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
 
 .header__profile i {
   font-size: 20px;
@@ -10134,13 +10146,19 @@ a:hover {
 
 .side-menu-button {
   position: fixed;
-  top: 10%;
+  top: 45px;
   z-index: 100;
-  left: 0px;
+  right: 0px;
   cursor: pointer;
+  font-size: 61px;
 }
 .side-menu-button i {
   font-size: 30px;
+}
+@media (max-width: 575.98px) {
+  .side-menu-button {
+    top: 75px;
+  }
 }
 
 .sidebar-main {
@@ -10223,6 +10241,12 @@ a:hover {
   border-radius: 0.5rem;
   justify-content: flex-start;
 }
+.sidebar-main__menu-item--active {
+  background-color: #fff;
+}
+.sidebar-main__menu-item--active i, .sidebar-main__menu-item--active a {
+  color: #B066CC;
+}
 .sidebar-main__menu-item a {
   display: flex;
   justify-content: start;
@@ -10232,7 +10256,6 @@ a:hover {
 }
 .sidebar-main__menu-item:hover {
   background-color: #fff;
-  color: #B066CC;
 }
 .sidebar-main__menu-item:hover i,
 .sidebar-main__menu-item:hover a {

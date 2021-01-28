@@ -1,6 +1,7 @@
 .info-section {
   margin-bottom: 68px;
-  margin-top: 48px;
+  margin-top: 48px;  
+  overflow-wrap: break-word;
   &__divider {
     &::after {
       content: "";

@@ -5,12 +5,17 @@
 
 .side-menu-button {
   position: fixed;
-  top: 10%;
+  top: 45px;
   z-index: 100;
-  left: 0px;
-  cursor: pointer;
+  // left: 0px;
+  right: 0px;
+  cursor: pointer;  
+  font-size: 61px;
   i {
     font-size: 30px;
+  }
+  @include media-breakpoint-down(xs) {
+    top: 75px;
   }
 }
 
@@ -101,6 +106,12 @@
   &__menu-item {
     padding: 11px 18px;
     border-radius: $border-radius;
+    &--active{
+      background-color: $bg-lighter;      
+      i,a{
+        color:$color-accent;
+      }
+    }
     a {
       display: flex;
       justify-content: start;
@@ -110,8 +121,7 @@
       padding-right: 15px;
     }
     &:hover {
-      background-color: $bg-lighter;
-      color: $color-accent;
+      background-color: $bg-lighter;      
       i,
       a {
         color: $color-accent;

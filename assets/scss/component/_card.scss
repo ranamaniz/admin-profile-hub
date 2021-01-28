@@ -51,6 +51,9 @@
     &__name{
       font-size: $font-size-xl;
       font-weight: 600;
+      @include media-breakpoint-down(xs) {
+        font-size: 1.4rem;
+      }
     }
   }
 
