@@ -106,6 +106,7 @@
   &__menu-item {
     padding: 11px 18px;
     border-radius: $border-radius;
+    font-size: $font-size-xs;
     &--active{
       background-color: $bg-lighter;      
       i,a{

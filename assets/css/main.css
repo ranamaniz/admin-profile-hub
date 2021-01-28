@@ -9953,7 +9953,7 @@ a:hover {
   padding: 0px;
   margin-top: 18px;
   margin-bottom: 24px;
-  font-size: 0.88rem;
+  font-size: 0.875rem;
 }
 
 .btn-light.dropdown-toggle {
@@ -10020,10 +10020,10 @@ a:hover {
   }
 }
 .card-customer__info__id {
-  font-size: 0.88rem;
+  font-size: 0.875rem;
 }
 .card-customer__info__name {
-  font-size: 2.06rem;
+  font-size: 2.063rem;
   font-weight: 600;
 }
 @media (max-width: 575.98px) {
@@ -10032,7 +10032,7 @@ a:hover {
   }
 }
 .card-customer__profile-details {
-  font-size: 0.94rem;
+  font-size: 0.938rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -10062,11 +10062,11 @@ a:hover {
 }
 .info-section__title {
   margin-bottom: 28px;
-  font-size: 1.19rem;
+  font-size: 1.118rem;
   font-weight: 600;
 }
 .info-section__data {
-  font-size: 0.88rem;
+  font-size: 0.875rem;
 }
 .info-section__data div {
   margin-bottom: 14px;
@@ -10120,6 +10120,15 @@ a:hover {
 .header__search .form-control {
   padding-left: 33px;
   border: none;
+  font-size: 0.875rem;
+  height: 36px;
+  width: 275px;
+  color: rgba(38, 37, 38, 0.74);
+}
+@media (max-width: 767.98px) {
+  .header__search .form-control {
+    width: 100%;
+  }
 }
 .header__search .form-control:focus {
   box-shadow: 0 0 0 0.2rem #F9F9FE;
@@ -10239,6 +10248,7 @@ a:hover {
 .sidebar-main__menu-item {
   padding: 11px 18px;
   border-radius: 0.5rem;
+  font-size: 0.875rem;
   justify-content: flex-start;
 }
 .sidebar-main__menu-item--active {
